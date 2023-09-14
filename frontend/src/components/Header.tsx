@@ -5,7 +5,9 @@ function Header() {
 
     return (
       <div className="header">
-        
+        <div className='imageContainer'>
+            <img src='/images/profileImage.jpg' alt='Profile'/>
+        </div>
       </div>
     );
   }

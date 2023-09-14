@@ -2,4 +2,18 @@
 
 .header{
     background-color: black;
+    height: 10vh;
+}
+
+.imageContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+img{
+    height: 60%;
+    width: 14%;
+    border-radius: 5em;
 }
