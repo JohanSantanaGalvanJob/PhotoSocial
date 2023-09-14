@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next/TransWithoutContext';
 import "./i18n";
 import logo from './logo.svg';
 import './styles/App.scss';
+import Header from './components/Header'
 
 function App() {
   const {t, i18n } = useTranslation();
@@ -19,6 +20,7 @@ function App() {
         {t("App.subtitle")}
         <div>
           <div>
+            <Header/>
             <button onClick={() => i18n.changeLanguage("es")}>ES</button>
             <button onClick={() => i18n.changeLanguage("en")}>EN</button>
           </div>
