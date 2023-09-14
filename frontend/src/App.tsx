@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next/TransWithoutContext';
 import "./i18n";
 import logo from './logo.svg';
 import './styles/App.scss';
+import Footer from './components/Footer';
 
 function App() {
   const {t, i18n } = useTranslation();
@@ -24,6 +25,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
