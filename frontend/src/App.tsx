@@ -9,24 +9,29 @@ import Header from './components/Header'
 
 function App() {
   const {t, i18n } = useTranslation();
+
+//   <div className="App">
+//   <header className="App-header">
+//     <img src={logo} className="App-logo" alt="logo" />
+//     <h1 className='App-title'>{t("title")}</h1>
+//     <div>{i18n.language}</div>
+//   </header>
+//   <div className='App-intro'>
+//     <Trans i18nKey="App.title">Default title</Trans>
+//     {t("App.subtitle")}
+//     <div>
+//       <div>
+//         <Header/>
+//         <button onClick={() => i18n.changeLanguage("es")}>ES</button>
+//         <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+//       </div>
+//     </div>
+//   </div>
+//   <Footer></Footer>
+// </div>
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className='App-title'>{t("title")}</h1>
-        <div>{i18n.language}</div>
-      </header>
-      <div className='App-intro'>
-        <Trans i18nKey="App.title">Default title</Trans>
-        {t("App.subtitle")}
-        <div>
-          <div>
-            <Header/>
-            <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-            <button onClick={() => i18n.changeLanguage("en")}>EN</button>
-          </div>
-        </div>
-      </div>
+      <Header/>
       <Footer></Footer>
     </div>
   );
